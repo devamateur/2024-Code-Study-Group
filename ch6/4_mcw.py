@@ -4,10 +4,11 @@ class Solution:
         word_dict = {}
         most_frequent = ""
 
-        new_para = paragraph.split()
+        # 특수문자를 모두 공백으로 치환
+        new_para = re.sub(r'[^\w]', ' ', paragraph)
+        new_para = new_para.split()
 
         for word in new_para:
-            word = re.sub("[!?\',;.\s]", "", word)         # 특수문자 제거
             lower_case = word.lower()
 
             if lower_case not in word_dict:
@@ -26,8 +27,3 @@ class Solution:
                 break
 
         return most_frequent
-    
-    # 이 경우 아래 테스트 케이스 1개가 통과되지 않았음
-    # Input: "a, a, a, a, b,b,b,c, c" ["a"]
-    # Output: "bbbc"
-    # Expected: "b"
