@@ -32,10 +32,11 @@ class Solution:
         return result
 
 
+
 '''
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        '''
+        """
         IDEA :
         - 포인터 2개 사용(인덱스의 위치) : left, right
         - 1. left, right를 비교하기
@@ -49,7 +50,7 @@ class Solution:
         Note :
         - 2문자 이하는 오류 발생
         - 문자열의 맨 앞,뒤부터 시작하여 비교하기 때문에 연산시간이 길다.(가장 큰 문자열 기준)
-        '''
+        """
 
         left, end_idx = 0, len(s)-1
         flag = True
