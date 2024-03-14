@@ -1,3 +1,4 @@
+# 왜 chapter6는 pull request 버튼 활성화 소식이 없을까,,,
 class Solution:
     '''
     # https://velog.io/@ilov1112/Leetcode-5.-Longest-Palindromic-Substring-with-Python
