@@ -1,2 +1,4 @@
 ## **✏️ Chapter 7 : Array**
 "파이썬 알고리즘 인터뷰" 7장 배열 내용을 정리하는 공간.  
+
+dibk : Hi :kissing_heart:
