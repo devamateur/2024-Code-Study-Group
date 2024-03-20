@@ -1,3 +1,3 @@
-## **✏️ Chapter 7 : Array**
+## **✏️ Chapter 8 : Linked List**
 "파이썬 알고리즘 인터뷰" 8장 연결 리스트 내용을 정리하는 공간.  
 
