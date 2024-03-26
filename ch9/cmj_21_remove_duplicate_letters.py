@@ -2,19 +2,20 @@ import collections
 
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
-        counter, seen, stack = collections.Counter(s), set(), []    #### seen: 봤던 알파벳을 저장하는 셋
+        counter, st = collections.Counter(s), []
 
         for char in s:
-            counter[char] -= 1
-            if char in seen:     # 이미 본 알파벳은 skip
+            counter[char] -= 1       ### 현재 char의 카운트를 1 감소  
+            
+            if char in st:  # 이미 스택에 해당 알파벳이 있으면 skip
                 continue
-            # 뒤에 붙일 문자가 남아 있다면 스택에서 제거
-            while stack and char < stack[-1] and counter[stack[-1]] > 0:
-                seen.remove(stack.pop())
-            stack.append(char)
-            seen.add(char)
+            
+            while st and char < st[-1] and counter[st[-1]] > 0:        ### 지금 pop하려는 알파벳이 한 개 이상이어야 함
+                st.pop()
 
-        return ''.join(stack)
+            st.append(char)
+
+        return ''.join(st)
     
 '''
     166 / 290 testcases passed
