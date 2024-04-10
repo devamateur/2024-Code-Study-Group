@@ -41,8 +41,7 @@ class MyCircularQueue:
         # all(iterble)
         # 모두 양수여야 True
         
-
-
+        
 # Your MyCircularQueue object will be instantiated and called as such:
 # obj = MyCircularQueue(k)
 # param_1 = obj.enQueue(value)
