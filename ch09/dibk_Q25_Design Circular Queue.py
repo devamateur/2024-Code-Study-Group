@@ -6,7 +6,7 @@ class MyCircularQueue:
         self.front = self.q[0]
         self.rear = self.q[0]
         
-
+    # 앞에서부터 입력
     def enQueue(self, value: int) -> bool:
         for i in range(self.len) :
             if not self.q[i] :
@@ -15,6 +15,7 @@ class MyCircularQueue:
                 return True
         return False
 
+    # 앞에서부터 삭제
     def deQueue(self) -> bool:
         for i in range(self.len):
             if self.q[i] :
@@ -37,6 +38,8 @@ class MyCircularQueue:
 
     def isFull(self) -> bool:
         return all(self.q)
+        # all(iterble)
+        # 모두 양수여야 True
         
 
 
