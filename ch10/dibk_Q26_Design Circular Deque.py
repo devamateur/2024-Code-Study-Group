@@ -14,50 +14,50 @@ class MyCircularDeque:
         self.size = size
 
     def insertFront(self, value: int) -> bool:
-        if count(self.deque) != self.size:
+        if len(self.deque) != self.size:
             self.deque.insert(0, value)         # index 0에 value값 추가
             return True
         else:
             return False
 
     def insertLast(self, value: int) -> bool:
-        if count(self.deque) != self.size:
+        if len(self.deque) != self.size:
             self.deque.append(value)            # 뒤에 추가
             return True
         else:
             return False
 
     def deleteFront(self) -> bool:
-        if count(self.deque) != 0:
+        if len(self.deque) != 0:
             self.deque.pop(0)                   # 0인덱스 값 pop
             return True
         else:
             return False
 
     def deleteLast(self) -> bool:
-        if count(self.deque) != 0:
+        if len(self.deque) != 0:
             self.deque.pop()                    # 맨뒤값 pop
             return True
         else:
             return False
 
     def getFront(self) -> int:
-        if count(self.deque) != 0:
+        if len(self.deque) != 0:
             return self.deque[0]
         else:
             return -1
 
     def getRear(self) -> int:
-        if count(self.deque) != 0:
+        if len(self.deque) != 0:
             return self.deque[-1]
         else:
             return -1
 
     def isEmpty(self) -> bool:
-        return count(self.deque) == 0
+        return len(self.deque) == 0
 
     def isFull(self) -> bool:
-        return count(self.deque) == self.size
+        return len(self.deque) == self.size
     
 #-------------------------------------------------------------------------------------------    
 # Solution 02 
