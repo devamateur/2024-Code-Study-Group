@@ -8,5 +8,5 @@ class Solution:
             if ch in jewels:
                 jewel_map[ch] += 1
 
-        result = sum(jewel_map.values()) if sum(jewel_map.values()) != 0 else 0
+        result = sum(jewel_map.values())
         return result
