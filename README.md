@@ -13,7 +13,7 @@
    + 문제를 제한 시간(30m, 60m) 내 풀지 못하면, solution 확인 후 리뷰 작성하기(solutions 비교하기)
    + 스터디 모임 전까지 깃 업로드하기
 - Study Rule :
-   + Meeting on Mon, Wed, Fri at 11 a.m
+   + Meeting on Tue, Thu at 21 p.m
    + online : Discord
    + 랜덤으로 리뷰어 선정, 리뷰어가 팀원들에게 코드 리뷰하기
 - reference :
