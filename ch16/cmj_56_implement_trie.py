@@ -8,7 +8,8 @@ class Trie:
             if w not in cur:
                 cur[w] = {}
             cur = cur[w]           # 현재 문자에 해당하는 노드로 갱신
-        cur['END'] = ''            # 문자의 끝을 표시함으로써 문자 구분 ex)apple, app -> a-p-p-l-e-END, a-p-p-END
+        cur['END'] = ''            # 문자의 끝을 표시함으로써 문자 구분 
+                                    # ex)apple, app -> {'a': {'p': {'p': {'l': {'e': {'END': {}}}}}}}, {'a': {'p': {'p':{'END':}}}}
 
     def search(self, word: str) -> bool:
         cur = self.root
