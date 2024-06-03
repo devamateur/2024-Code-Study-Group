@@ -25,3 +25,15 @@ class Solution:
                 result.append(nums[deq[0]])
 
         return result
+
+    # 시간 초과... O(nk)
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        left, right = 0, k-1
+
+        result = []
+        while right < len(nums):
+            result.append(max(nums[left:right+1]))
+            left += 1
+            right += 1
+
+        return result
