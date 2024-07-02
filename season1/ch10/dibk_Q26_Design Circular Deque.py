@@ -14,6 +14,7 @@ class MyCircularDeque:
         self.size = size
 
     def insertFront(self, value: int) -> bool:
+
         if len(self.deque) != self.size:
             self.deque.insert(0, value)         # index 0에 value값 추가
             return True
@@ -29,6 +30,7 @@ class MyCircularDeque:
 
     def deleteFront(self) -> bool:
         if len(self.deque) != 0:
+
             self.deque.pop(0)                   # 0인덱스 값 pop
             return True
         else:
@@ -36,6 +38,7 @@ class MyCircularDeque:
 
     def deleteLast(self) -> bool:
         if len(self.deque) != 0:
+
             self.deque.pop()                    # 맨뒤값 pop
             return True
         else:

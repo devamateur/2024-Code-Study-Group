@@ -2,6 +2,7 @@
 2024년 코딩 테스트 준비 및 알고리즘 학습을 위한 문제풀이, 코드 리뷰 등 내용을 정리하는 공간.   
   
 ---
+
 ## 💡 Coding-Test STUDY : Season 2
 - Member :
    + 백단익, 조미정, 민솔비
@@ -16,8 +17,10 @@
    + online : Discord
 - reference :
    + "이것이 취업을 위한 코딩 테스트다 with Python" GitHub 저장소:   
+
    https://github.com/ndb796/python-for-coding-test
   
+
 ## 💡 Coding-Test STUDY : Season 1
 - Member :
    + 백단익, 조미정
