@@ -22,7 +22,7 @@ NxM배열(게임맵)에서 캐릭터가 메뉴얼에 따라 이동했을 때 방
 '''
 
 class Solution:
-    
+    visited = 0
     def game(self):
         
         # 설정
@@ -38,10 +38,10 @@ class Solution:
             game_map += list(map(int,input().split())),
         
         # 실행
-        def move(row,col,int_d,visited):
+        def move(row,col,int_d):
             # 현재 위치 방문 처리
             game_map[row][col] = 3
-            visited +=1
+            self.visited +=1
             
             for ch in direction[int_d] :
                 # ch : "L", "D",,, 방향
@@ -57,13 +57,13 @@ class Solution:
                 col += y_
       
                 # 이동              
-                visited = move(row,col,d_,visited)
+                move(row,col,d_)
             
-            return visited
+            return
         
-        result = move(x,y,d,0)
+        move(x,y,d)
         print()
-        print("# 결과 : ",result)
+        print("# 결과 : ",self.visited)
 
 test=Solution()
 test.game()
