@@ -15,7 +15,6 @@ sort함수 사용.
 '''
 
 class Solution :
-    result = 0      # 결과값 초기화
     
     def formToptoDown(self):
         # 입력
