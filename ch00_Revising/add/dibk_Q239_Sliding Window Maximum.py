@@ -22,7 +22,7 @@ failed
 이 문제에서 포인트는 인덱스 위치값을 저장하는 것, while문에서 tmp의 마지막값 비교, 현재 인덱스값 비교가 핵심으로 보인다.
 
 '''
-
+# solution
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
     	# 슬라이딩 윈도우의 크기가 1인 경우, 그냥 최댓값은 배열 자기 자신이나 마찬가지이다.
