@@ -24,7 +24,7 @@ class Solution:
 
             # Deque에 현재 값보다 작은 값이 있는 동안 계속 제거
             # 현재 값보다 크거나 같은 값을 남김김
-            while deq and nums[deq[-1]] < nums[i]:
+            while deq and nums[deq[-1]] < nums[r]:
                 deq.pop()
 
             # 현재 인덱스를 deque에 추가
