@@ -46,12 +46,9 @@ class Solution:
         y_loc.sort()
         z_loc.sort()
 
-        # print(x_loc)
-        # print(y_loc)
-        # print(z_loc)
 
         # 행성의 연결 비용 = min(|xa-xb|, |ya-xb|, |za-zb|) 라고 되어있는데
-        # 왜 ya-yb를 추가하는지 모르겠다... |ya-xb|가 오타인건지
+        # 백준을 보니 ya-yb다...오타 뭐임
         for i in range(N-1):
             graph.append((x_loc[i+1][0] - x_loc[i][0], x_loc[i][1], x_loc[i+1][1]))
             graph.append((y_loc[i+1][0] - y_loc[i][0], y_loc[i][1], y_loc[i+1][1]))
@@ -69,5 +66,6 @@ class Solution:
                 result += cost
 
         print(result)
+        
 s = Solution()
 s.connect()
