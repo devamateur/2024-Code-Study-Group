@@ -29,6 +29,10 @@ N = int(sys.stdin.readline("도시의 수").rstrip())
 M = int(sys.stdin.readline("버스의 수").rstrip())
 
 graph = [[INF]*(N+1) for _ in range(N+1)]
+for i in range(1,N+1):
+    for j in range(1,N+1):
+        if i==j :
+            graph[i][j] =0
 
 for _ in range(M) :
     a,b,cost = map(int,sys.stdin.readline().split())
@@ -37,7 +41,7 @@ for _ in range(M) :
         graph[a][b] = cost
 
 #  "시작 도시와 도착 도시를 연결하는 노선은 하나가 아닐 수 있다." : 확인
-for row2 in range(N + 1):                               # row2 : (거쳐가는 노드)
-    for row1 in range(N + 1):
-        for col in range(N + 1):
+for row2 in range(1,N + 1):                               # row2 : (거쳐가는 노드)
+    for row1 in range(1,N + 1):
+        for col in range(1,N + 1):
             cost[row1][col] = min(cost[row1][col],cost[row1][row2] + cost[row2][row1])
