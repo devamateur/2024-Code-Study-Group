@@ -1,9 +1,7 @@
-import collections
 def solution(N, stages):
     answer = []
     
     # 실패율 = 스테이지에 도달했지만 클리어못한 플레이어 수 / 스테이지에 도달한 전체 플레이어 수
-    stages.sort()
     
     for i in range(1, N+1):
         current_player = stages.count(i)              # 스테이지에 도달했지만 클리어못한 플레이어
